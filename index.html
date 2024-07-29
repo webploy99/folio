@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>folio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</head>
+<body>
+    <div onclick="openNav()" class="text-2xl fixed top-0 left-0 p-1.5 xl:hidden z-50"><button><ion-icon name="menu"></ion-icon></button></div>
+    <div id="mySidenav" class="header w-0 xl:w-48 fixed left-0 top-0 h-full bg-gray-800 overflow-x-hidden duration-300">
+        <div onclick="closeNav()" class="absolute right-0 top-0 text-3xl text-gray-100 p-1.5 xl:hidden"><button><ion-icon name="close-circle"></ion-icon></button></div>
+        <div>
+            <img src="./images/logo.png">
+            <span class="bg-yellow-500 p-3 font-bold tracking-wider text-white block text-center">BitCoin</span>
+        </div>
+        <nav>
+            <div class="menu text-gray-100">
+                <ul class="flex flex-col gap-3 p-5">
+                    <li class="home active"><a href="#home">Home</a></li>
+                    <li class="trading"><a href="#trading">Trading</a></li>
+                    <li class="invest"><a href="#invest">Investing</a></li>
+                    <li class="market"><a href="#market">Market</a></li>
+                    <li class="blog"><a href="#blog">Blog</a></li>
+                    <li class="log"><a href="#log">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="max-w-screen-lg m-auto border-2 shadow-xl text-gray-800">
+        <section id="home" class="shadow-xl mt-5">
+            <h1>Home</h1>
+            <img src="./images/logo.png">
+        </section>
+        <section id="trading" class="shadow-xl mt-5">
+            <h1>trading</h1>
+        </section>
+        <section id="invest" class="shadow-xl mt-5">
+            <h1>invest</h1>
+        </section>
+        <section id="market" class="shadow-xl mt-5">
+            <h1>market</h1>
+        </section>
+        <section id="blog" class="shadow-xl mt-5">
+            <h1>blog</h1>
+        </section>
+        <section id="log" class="shadow-xl mt-5">
+            <h1>log</h1>
+        </section>
+    </div>
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0px";
+        }
+
+
+        const sections = document.querySelectorAll("section");
+            const navLi = document.querySelectorAll("nav .menu ul li");
+            window.onscroll = () => {
+                var current = "";
+
+                sections.forEach((section) => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 60) {
+                        current = section.getAttribute("id");
+                    }
+                });
+
+                navLi.forEach((li) => {
+                    li.classList.remove("active");
+                    if (li.classList.contains(current)) {
+                        li.classList.add("active");
+                    }
+                });
+            };
+    </script>
+</body>
+</html>

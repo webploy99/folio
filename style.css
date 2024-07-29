@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Kdam+Thmor+Pro&family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+body {
+    font-family: "Pathway Extreme", sans-serif;
+}
+section {
+    height: 100vh;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 100px;
+}
+
+nav .menu ul li.active {
+    /* background-color: #3b49df; */
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+nav .menu ul li.active a {
+    color: #11d00e;
+}
