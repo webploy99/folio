@@ -3,11 +3,8 @@
 body {
     font-family: "Pathway Extreme", sans-serif;
 }
-section {
-    height: 100vh;
-    width: 100%;
-    text-transform: uppercase;
-    font-size: 100px;
+html {
+    scroll-behavior: smooth;
 }
 
 nav .menu ul li.active {
@@ -18,4 +15,129 @@ nav .menu ul li.active {
 
 nav .menu ul li.active a {
     color: #11d00e;
+}
+
+/* ================ Skill ===================== */
+
+
+.flex-content .flex1 {
+    display: flex;
+    flex: 1;
+}
+
+.progress {
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 2px;
+    display: flex;
+    justify-content: flex-start;
+    height: 8px;
+    font-size: 11px;
+}
+
+.progress-value {
+    animation: load 3s normal forwards;
+    border-radius: 100px;
+    background: #fcbf49;
+    height: 5px;
+    width: 0;
+}
+
+.progress-value2 {
+    animation: load2 3s normal forwards;
+    border-radius: 100px;
+    background: #fcbf49;
+    height: 5px;
+    width: 0;
+}
+
+.progress-value3 {
+    animation: load3 3s normal forwards;
+    border-radius: 100px;
+    background: #fcbf49;
+    height: 5px;
+    width: 0;
+}
+
+.progress-value4 {
+    animation: load4 3s normal forwards;
+    border-radius: 100px;
+    background: #fcbf49;
+    height: 5px;
+    width: 0;
+}
+.progress-value5 {
+    animation: load5 3s normal forwards;
+    border-radius: 100px;
+    background: #fcbf49;
+    height: 5px;
+    width: 0;
+}
+.progress-value6 {
+    animation: load6 3s normal forwards;
+    border-radius: 100px;
+    background: #fcbf49;
+    height: 5px;
+    width: 0;
+}
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes load2 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes load3 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes load4 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes load5 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes load6 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 75%;
+    }
 }
