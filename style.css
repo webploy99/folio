@@ -7,8 +7,8 @@ html {
     scroll-behavior: smooth;
 }
 
+/* ======== Menu Active ======== */
 nav .menu ul li.active {
-    /* background-color: #3b49df; */
     border-radius: 30px;
     transition: 0.3s;
 }
@@ -17,9 +17,8 @@ nav .menu ul li.active a {
     color: #11d00e;
 }
 
+
 /* ================ Skill ===================== */
-
-
 .flex-content .flex1 {
     display: flex;
     flex: 1;
@@ -82,7 +81,7 @@ nav .menu ul li.active a {
     width: 0;
 }
 
-@keyframes load {
+@keyframes load{
     0% {
         width: 0;
     }
@@ -139,5 +138,58 @@ nav .menu ul li.active a {
 
     100% {
         width: 75%;
+    }
+}
+
+
+/* =============Gallery Click Change =============== */
+.gallery .gallery-filter .filter-item {
+    border-bottom: 2px solid transparent;
+    line-height: 1.2;
+    transition: all 0.3s ease;
+}
+
+.gallery .gallery-filter .filter-item.active {
+    color: #4c4243;
+    border-color: #d49c48;
+}
+
+.gallery .gallery-item {
+    width: calc(100% / 3);
+    padding: 5px;
+}
+
+.gallery .gallery-item.hide {
+    display: none;
+}
+
+.gallery .gallery-item.show {
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*===== responsive =====*/
+@media(max-width: 991px) {
+    .gallery .gallery-item {
+        width: 50%;
+    }
+}
+
+@media(max-width: 448px) {
+    .gallery .gallery-item {
+        width: 100%;
+    }
+
+    .gallery .gallery-filter .filter-item {
+        margin-bottom: 10px;
     }
 }
