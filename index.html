@@ -19,7 +19,7 @@
 </head>
 <body>
     <!-- header -->
-     <section>
+     <section class="overflow-x-hidden">
          <div onclick="openNav()" class="text-3xl fixed top-0 left-0 xl:hidden z-40 text-white p-1"><button><ion-icon name="menu" class="px-0.5 bg-yellow-500 border border-gray-400"></ion-icon></button></div>
          <div id="mySidenav" class="header z-50 w-0 xl:w-48 fixed left-0 top-0 h-full bg-[#023047] overflow-x-hidden duration-300">
              <div onclick="closeNav()" class="absolute right-0 top-0 text-3xl text-yellow-500 p-1.5 xl:hidden"><button><ion-icon name="close-circle"></ion-icon></button></div>
@@ -36,6 +36,7 @@
                          <li class="service"><a href="#service"><ion-icon name="browsers"></ion-icon> SERVICE</a></li>
                          <li class="folio"><a href="#folio"><ion-icon name="briefcase"></ion-icon> PORTFOLIO</a></li>
                          <li class="blog"><a href="#blog"><ion-icon name="hourglass"></ion-icon> MY BLOG</a></li>
+                         <li class="contact"><a href="#contact"><ion-icon name="send"></ion-icon> CONTACT</a></li>
                      </ul>
                  </div>
              </nav>
@@ -44,7 +45,7 @@
 
     <!-- main section -->
     <!-- Home -->    
-    <section id="home" class="mt-5 bg-white flex justify-center items-center p-5 h-[100vh]">
+    <section id="home" class="mt-5 overflow-x-hidden bg-white flex justify-center items-center p-5 h-[100vh]">
         <div class="max-w-screen-lg m-auto">
             <div class="grid sm:grid-cols-2 items-center gap-5">
                 <div class="flex flex-col tracking-wide" data-aos="zoom-in" data-aos-duration="1500">
@@ -59,7 +60,7 @@
     </section>
 
     <!-- About -->
-    <section id="about" class="mt-5 bg-[#f8f8f8] flex justify-center items-center px-5 py-10 md:py-20">
+    <section id="about" class="mt-5 overflow-x-hidden bg-[#f8f8f8] flex justify-center items-center px-5 py-10 md:py-20">
         <div class="max-w-screen-lg m-auto">
             <div class="grid sm:grid-cols-12 items-center gap-5">
                 <div class="col-span-6 lg:col-span-5 flex justify-center sm:justify-start items-center" data-aos="fade-right" data-aos-duration="1000"><img src="./images/person2.avif"></div>
@@ -104,7 +105,7 @@
     </section>
 
     <!-- Resume -->
-    <section id="resume" class="mt-5 bg-white flex justify-center items-center px-5 py-10 md:py-20">
+    <section id="resume" class="mt-5 overflow-x-hidden bg-white flex justify-center items-center px-5 py-10 md:py-20">
         <div class="max-w-screen-lg m-auto">
             <div class="flex gap-3 flex-col jsutify-center items-center text-2xl sm:text-3xl">
                 <span class="text-gray-400 font-bold block">My Resume</span>
@@ -225,7 +226,7 @@
     </section>
 
     <!-- Service -->
-    <section id="service" class="mt-5 bg-[#f8f8f8] flex justify-center items-center px-5 py-10 md:py-20">
+    <section id="service" class="mt-5 overflow-x-hidden bg-[#f8f8f8] flex justify-center items-center px-5 py-10 md:py-20">
         <div class="max-w-screen-lg m-auto">
             <div class="flex gap-3 flex-col jsutify-center items-center font-semibold">
                 <span class="text-3xl sm:text-xl text-gray-400">What we do</span>
@@ -284,7 +285,7 @@
     </section>
     
     <!-- Folio -->
-    <section id="folio" class="mt-5 bg-white flex justify-center items-center px-5 py-10 md:py-20">
+    <section id="folio" class="mt-5 overflow-x-hidden bg-white flex justify-center items-center px-5 py-10 md:py-20">
         <div class="max-w-screen-lg m-auto">
             <span class="text-2xl sm:text-3xl text-gray-500 block text-center font-bold block">My Blog Post</span>
             <!-- gallery -->
@@ -338,7 +339,7 @@
     </section>
 
     <!-- Blog -->
-    <section id="blog" class="mt-5 bg-[#f8f8f8] px-5 py-20 md:h-[100vh]">
+    <section id="blog" class="mt-5 overflow-x-hidden bg-[#f8f8f8] px-5 py-20 md:h-[100vh]">
         <div class="max-w-screen-lg m-auto">
             <!-- motivation -->
             <span class="text-2xl sm:text-3xl text-gray-700 block text-center font-bold block">My Blog Post</span>
@@ -415,6 +416,21 @@
             </div>
         </div>
     </section>
+
+    <!-- Contact -->
+     <section id="contact" class="mt-5 overflow-x-hidden bg-white flex justify-center items-center px-5 py-10 md:py-20 h-[50vh]">
+        <div class="max-w-screen-lg m-auto">
+            <div class="flex gap-3 flex-col jsutify-center text-sm tracking-wide">
+                <span class="text-gray-400 font-bold block">INFORMATION</span>
+                <span class="text-gray-700 text-2xl font-semibold block">CONTACT INFORMATION</span>
+                <p class="mt-3 leading-6">Event definition is - somthing that happens occurre How evesnt sentence. <br> Synonym when an unknown printer took a galley.</p>
+                <span class="text-md font-bold mt-3">OFFICE IN NEW YORK</span>
+                <div class="flex gap-2 sm:items-center"><ion-icon name="location" class="text-yellow-500 text-lg"></ion-icon> <b class="text-gray-700">ADDRESS:</b> Event Center park WT 22 New York</div>
+                <div class="flex gap-2 sm:items-center"><ion-icon name="call" class="text-yellow-500 text-lg"></ion-icon> <b class="text-gray-700">PHONE:</b> +9 125 645 8654</div>
+                <div class="flex gap-2 sm:items-center"><ion-icon name="mail" class="text-yellow-500 text-lg"></ion-icon> <b class="text-gray-700">E-EMAIL:</b> info@exemple.com</div>
+            </div>
+        </div>
+     </section>
     <script src="./script.js"></script>
 </body>
 </html>
