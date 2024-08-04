@@ -21,12 +21,11 @@
 <body>
     <!-- header -->
      <section class="overflow-x-hidden">
-         <div onclick="openNav()" class="text-3xl fixed top-0 left-0 xl:hidden z-40 text-white p-1"><img src="./images/icon1.png" class="w-9"></div>
-         <!-- <div onclick="openNav()" class="text-3xl fixed top-0 left-0 xl:hidden z-40 text-white p-1"><button><ion-icon name="menu" class="px-0.5 bg-yellow-500 border border-gray-400"></ion-icon></button></div> -->
+         <div onclick="openNav()" class="text-3xl fixed top-0 left-0 xl:hidden z-40 text-white p-1"><img src="./images/icon1.png" class="w-10"></div>
          <div id="mySidenav" class="header z-50 w-0 xl:w-48 fixed left-0 top-0 h-full bg-[#023047] overflow-x-hidden duration-300">
-             <div onclick="closeNav()" class="absolute right-0 top-0 text-3xl text-yellow-500 p-1.5 xl:hidden"><button><ion-icon name="close-circle"></ion-icon></button></div>
+             <div onclick="closeNav()" class="absolute right-0 top-0 text-3xl text-yellow-500 p-1.5 xl:hidden z-50"><button><ion-icon name="close-circle"></ion-icon></button></div>
              <div>
-                 <img src="./images/logo.jpg">
+                 <img src="./images/r.jpg" class="opacity-100">
                  <span class="bg-yellow-500 p-2.5 font-semibold tracking-wider text-white block text-center">BitCoin</span>
              </div>
              <nav>
@@ -48,16 +47,16 @@
     <!-- main section -->
     <!-- Home -->
      <!-- name and cv -->
-    <section id="home" class="mt-5 overflow-x-hidden bg-white flex justify-center items-center p-5 h-[100vh]">
-        <div class="max-w-screen-lg m-auto">
-            <div class="grid sm:grid-cols-2 items-center gap-5">
-                <div class="flex flex-col tracking-wide" data-aos="zoom-in" data-aos-duration="1500">
-                    <span class="text-4xl font-bold tracking-wider mt-5">Jame <span class="text-yellow-500">Villam</span></span>
+    <section id="home" class="overflow-x-hidden bg-[#14213d] p-5 sm:p-0 h-[100vh]">
+        <div class="max-w-screen-lg m-auto h-full flex items-center sm:items-end">
+            <div class="grid sm:grid-cols-12">
+                <div class="sm:col-span-5 flex flex-col h-full tracking-wide text-gray-100" data-aos="zoom-in" data-aos-duration="1500">
+                    <span class="text-4xl font-bold tracking-wider mt-5 sm:mt-40">Jame <span class="text-yellow-500">Villam</span></span>
                     <span class="text-xl mt-3">Web developer</span>
-                    <p class="mt-5">I'm Will Smith, front web developer with two year experience in this field​.</p>
+                    <p class="mt-5">I'm Will Smith. I have been working since 2020, I am proficient in front web development & ui design with two year experience in this field.</p>
                     <div class="mt-8 text-gray-800 text-sm sm:text-md font-semibold"><button class="px-4 sm:px-6 py-2 sm:py-2.5 bg-yellow-500 rounded shadow-xl hover:scale-x-105 hover:text-white duration-300">Download CV</button></div>
                 </div>
-                <div class="flex justify-center items-center" data-aos="zoom-in" data-aos-duration="1500"><img src="./images/bggg.jpg" class="w-10/12 shadow"></div>
+                <div class="sm:col-span-7 mt-10 ms:mt-0 flex justify-center items-center" data-aos="zoom-in" data-aos-duration="1500"><img src="./images/poster.png" class="opacity-60"></div>
             </div>
         </div>
     </section>
@@ -67,7 +66,7 @@
     <section id="about" class="mt-5 overflow-x-hidden bg-[#f8f8f8] flex justify-center items-center px-5 py-10 md:py-20">
         <div class="max-w-screen-lg m-auto">
             <div class="grid sm:grid-cols-12 items-center gap-5">
-                <div class="col-span-6 lg:col-span-5 flex justify-center sm:justify-start items-center" data-aos="fade-right" data-aos-duration="1000"><img src="./images/person2.avif"></div>
+                <div class="col-span-6 lg:col-span-5 flex justify-center sm:justify-start items-center" data-aos="fade-right" data-aos-duration="1000"><img src="./images/pp.png" class="opacity-90"></div>
 
                 <div class="col-span-6 lg:col-span-7 flex flex-col tracking-wide"data-aos="fade-left" data-aos-duration="1000">
                     <span class="text-2xl sm:text-3xl font-bold tracking-wider mt-5 text-gray-800">About Me</span></span>
@@ -313,11 +312,11 @@
                                 <div class="pageContent hidden w-full h-full flex flex-col bg-[#fefae0] duration-500 overflow-hidden z-50">
                                     <!-- hide first page icon -->
                                     <div class="w-full flex justify-center items-center">
-                                        <button class="absolute bottom-0 text-2xl mr-10 z-10 text-gray-600">
-                                            <ion-icon class="hidePage text-2xl bg-yellow-200 hover:bg-yellow-300 rounded-full p-1 duration-300" name="arrow-back-outline"></ion-icon>
+                                        <button class="absolute bottom-0 text-2xl z-10 text-gray-600">
+                                            <ion-icon class="hidePage text-xl bg-yellow-300 hover:bg-yellow-400 rounded-full p-1 duration-300" name="arrow-back-outline"></ion-icon>
                                         </button>
                                     </div>
-                                    <div class="w-full p-3 text-sm grid grid-cols-12">
+                                    <div class="w-full p-5 text-sm grid grid-cols-12">
                                         <div class="scroll-bar flex gap-1 flex-col size-72 sm:size-96 md:size-80 overflow-auto">
                                             <a href="https://ee88-theta.vercel.app/" class="hover:underline" target="_blank">https://ee88-theta.vercel.app/</a>
                                             <a href="https://hay88-cua.vercel.app/" class="hover:underline" target="_blank">https://hay88-cua.vercel.app/</a>
